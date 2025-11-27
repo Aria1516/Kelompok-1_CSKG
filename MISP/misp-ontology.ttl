@@ -1,0 +1,259 @@
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+
+# Ganti base ini kalau kamu mau pakai namespace lain
+@prefix mispf:  <http://w3id.org/sepses/vocab/misp-feed#> .
+
+<>
+    a owl:Ontology ;
+    dct:title "MISP Feed Configuration Ontology" ;
+    dct:description "Ontology to represent MISP OSINT feeds and their tags (derived from misp-slug.json)" ;
+    dct:creator "Your Group (Expanding SEPSES CSKG)" ;
+    owl:versionInfo "0.1" .
+
+#################################################################
+# CLASSES
+#################################################################
+
+mispf:Feed a owl:Class ;
+    rdfs:label "MISP Feed" ;
+    rdfs:comment "Configuration of a MISP feed (OSINT/threat-intel feed entry)." .
+
+mispf:FeedTag a owl:Class ;
+    rdfs:label "MISP Feed Tag" ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:comment "Tag associated with a MISP feed, typically describing source type, etc." .
+
+mispf:Provider a owl:Class ;
+    rdfs:label "Feed Provider" ;
+    rdfs:comment "Organization or entity that provides the feed." .
+
+#################################################################
+# OBJECT PROPERTIES
+#################################################################
+
+mispf:hasTag a owl:ObjectProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  mispf:FeedTag ;
+    rdfs:label "has tag" ;
+    rdfs:comment "Associates a feed with a tag defined in the JSON 'Tag' object." .
+
+mispf:hasProvider a owl:ObjectProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  mispf:Provider ;
+    rdfs:label "has provider" ;
+    rdfs:comment "Links a feed to its provider organization (if mapped as a resource instead of a literal)." .
+
+#################################################################
+# DATATYPE PROPERTIES – FEED
+#################################################################
+
+mispf:feedName a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:string ;
+    rdfs:label "feed name" ;
+    rdfs:comment "Value of Feed.name." .
+
+mispf:feedSlug a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:string ;
+    rdfs:label "feed slug" ;
+    rdfs:comment "Value of Feed.slug (unique identifier of the feed configuration)." .
+
+mispf:feedUrl a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:anyURI ;
+    rdfs:label "feed URL" ;
+    rdfs:comment "Value of Feed.url (remote source location)." .
+
+mispf:providerName a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:string ;
+    rdfs:label "provider name" ;
+    rdfs:comment "String value of Feed.provider (if provider is not modeled as separate resource)." .
+
+mispf:rulesJson a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:string ;
+    rdfs:label "rules (JSON)" ;
+    rdfs:comment "Raw JSON string from Feed.rules field (tag/org filters, etc.)." .
+
+mispf:enabled a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:boolean ;
+    rdfs:label "enabled" ;
+    rdfs:comment "Whether the feed is enabled (Feed.enabled)." .
+
+mispf:distribution a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:string ;
+    rdfs:label "distribution" ;
+    rdfs:comment "MISP distribution level (Feed.distribution), encoded as string/enum (0,1,2,3,...)." .
+
+mispf:isDefault a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:boolean ;
+    rdfs:label "is default" ;
+    rdfs:comment "Whether the feed configuration is default (Feed.default)." .
+
+mispf:sourceFormat a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:string ;
+    rdfs:label "source format" ;
+    rdfs:comment "Value of Feed.source_format (e.g. 'csv', 'freetext', 'misp')." .
+
+mispf:fixedEvent a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:boolean ;
+    rdfs:label "fixed event" ;
+    rdfs:comment "Value of Feed.fixed_event." .
+
+mispf:deltaMerge a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:boolean ;
+    rdfs:label "delta merge" ;
+    rdfs:comment "Value of Feed.delta_merge." .
+
+mispf:publishOnImport a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:boolean ;
+    rdfs:label "publish on import" ;
+    rdfs:comment "Value of Feed.publish." .
+
+mispf:overrideIds a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:boolean ;
+    rdfs:label "override IDs" ;
+    rdfs:comment "Value of Feed.override_ids." .
+
+mispf:settingsJson a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:string ;
+    rdfs:label "settings JSON" ;
+    rdfs:comment "Raw JSON settings from Feed.settings (CSV column config, regex, etc.)." .
+
+mispf:inputSource a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:string ;
+    rdfs:label "input source" ;
+    rdfs:comment "Value of Feed.input_source (e.g. 'network')." .
+
+mispf:deleteLocalFile a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:boolean ;
+    rdfs:label "delete local file" ;
+    rdfs:comment "Value of Feed.delete_local_file." .
+
+mispf:lookupVisible a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:boolean ;
+    rdfs:label "lookup visible" ;
+    rdfs:comment "Value of Feed.lookup_visible." .
+
+mispf:headers a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:string ;
+    rdfs:label "HTTP headers" ;
+    rdfs:comment "Optional HTTP headers for the feed (Feed.headers)." .
+
+mispf:cachingEnabled a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:boolean ;
+    rdfs:label "caching enabled" ;
+    rdfs:comment "Value of Feed.caching_enabled." .
+
+mispf:forceToIds a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:boolean ;
+    rdfs:label "force to IDS" ;
+    rdfs:comment "Value of Feed.force_to_ids." .
+
+mispf:sharingGroupId a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:string ;
+    rdfs:label "sharing group ID" ;
+    rdfs:comment "Value of Feed.sharing_group_id." .
+
+mispf:tagId a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:string ;
+    rdfs:label "tag ID" ;
+    rdfs:comment "Value of Feed.tag_id." .
+
+mispf:eventId a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:string ;
+    rdfs:label "event ID" ;
+    rdfs:comment "Value of Feed.event_id (if present)." .
+
+mispf:orgcId a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:string ;
+    rdfs:label "orgc ID" ;
+    rdfs:comment "Value of Feed.orgc_id (creator org ID)." .
+
+mispf:cachedElements a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:integer ;
+    rdfs:label "cached elements" ;
+    rdfs:comment "Value of Feed.cached_elements." .
+
+mispf:coverageByOtherFeeds a owl:DatatypeProperty ;
+    rdfs:domain mispf:Feed ;
+    rdfs:range  xsd:string ;
+    rdfs:label "coverage by other feeds" ;
+    rdfs:comment "Value of Feed.coverage_by_other_feeds (e.g. '0%')." .
+
+#################################################################
+# DATATYPE PROPERTIES – TAG
+#################################################################
+
+mispf:tagName a owl:DatatypeProperty ;
+    rdfs:domain mispf:FeedTag ;
+    rdfs:range  xsd:string ;
+    rdfs:label "tag name" ;
+    rdfs:comment "Value of Tag.name (e.g. osint:source-type=\"block-or-filter-list\")." .
+
+mispf:tagSlug a owl:DatatypeProperty ;
+    rdfs:domain mispf:FeedTag ;
+    rdfs:range  xsd:string ;
+    rdfs:label "tag slug" ;
+    rdfs:comment "Value of Tag.slug (unique identifier for tag)." .
+
+mispf:tagColour a owl:DatatypeProperty ;
+    rdfs:domain mispf:FeedTag ;
+    rdfs:range  xsd:string ;
+    rdfs:label "tag colour" ;
+    rdfs:comment "Hex color code of Tag.colour." .
+
+mispf:tagExportable a owl:DatatypeProperty ;
+    rdfs:domain mispf:FeedTag ;
+    rdfs:range  xsd:boolean ;
+    rdfs:label "tag exportable" ;
+    rdfs:comment "Value of Tag.exportable." .
+
+mispf:tagHidden a owl:DatatypeProperty ;
+    rdfs:domain mispf:FeedTag ;
+    rdfs:range  xsd:boolean ;
+    rdfs:label "tag hidden" ;
+    rdfs:comment "Value of Tag.hide_tag (true if hidden in UI)." .
+
+#################################################################
+# ALIGNMENT WITH GENERIC VOCABS (OPTIONAL)
+#################################################################
+
+# You can optionally tell reasoners that some properties are specializations
+# of common vocabularies, useful when integrating with other KGs.
+
+mispf:feedName rdfs:subPropertyOf schema:name .
+mispf:feedSlug rdfs:subPropertyOf dct:identifier .
+mispf:feedUrl  rdfs:subPropertyOf schema:url .
+
+mispf:tagName  rdfs:subPropertyOf skos:prefLabel .
+mispf:tagSlug  rdfs:subPropertyOf skos:notation .
+
