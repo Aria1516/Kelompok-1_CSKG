@@ -1,0 +1,70 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix ex: <http://example.org/> .
+
+<#FeedMapping>
+    rml:logicalSource [
+        rml:source "misp-slug.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$[*]" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://example.org/feed/{Feed.slug}" ;
+        rr:class ex:Feed ;
+    ] ;
+
+    # Feed fields (semua lengkap)
+    rr:predicateObjectMap [ rr:predicate ex:name ; rr:objectMap [ rml:reference "Feed.name" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:provider ; rr:objectMap [ rml:reference "Feed.provider" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:url ; rr:objectMap [ rml:reference "Feed.url" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:rules ; rr:objectMap [ rml:reference "Feed.rules" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:enabled ; rr:objectMap [ rml:reference "Feed.enabled" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:distribution ; rr:objectMap [ rml:reference "Feed.distribution" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:sharing_group_id ; rr:objectMap [ rml:reference "Feed.sharing_group_id" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:default ; rr:objectMap [ rml:reference "Feed.default" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:source_format ; rr:objectMap [ rml:reference "Feed.source_format" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:fixed_event ; rr:objectMap [ rml:reference "Feed.fixed_event" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:delta_merge ; rr:objectMap [ rml:reference "Feed.delta_merge" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:publish ; rr:objectMap [ rml:reference "Feed.publish" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:override_ids ; rr:objectMap [ rml:reference "Feed.override_ids" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:settings ; rr:objectMap [ rml:reference "Feed.settings" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:input_source ; rr:objectMap [ rml:reference "Feed.input_source" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:delete_local_file ; rr:objectMap [ rml:reference "Feed.delete_local_file" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:lookup_visible ; rr:objectMap [ rml:reference "Feed.lookup_visible" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:headers ; rr:objectMap [ rml:reference "Feed.headers" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:caching_enabled ; rr:objectMap [ rml:reference "Feed.caching_enabled" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:force_to_ids ; rr:objectMap [ rml:reference "Feed.force_to_ids" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:slug ; rr:objectMap [ rml:reference "Feed.slug" ; rml:optional true ] ] ;
+
+    # Link to Tag
+    rr:predicateObjectMap [
+        rr:predicate ex:hasTag ;
+        rr:objectMap [
+            rr:parentTriplesMap <#TagMapping> ;
+            rml:joinCondition [
+                rml:child "Tag.slug" ;
+                rml:parent "Feed.slug" ;
+            ] ;
+        ] ;
+    ] .
+
+<#TagMapping>
+    rml:logicalSource [
+        rml:source "misp-slug.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$[*]" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://example.org/tag/{Tag.slug}" ;
+        rr:class ex:Tag ;
+        rml:optional true ;
+    ] ;
+
+    rr:predicateObjectMap [ rr:predicate ex:name ; rr:objectMap [ rml:reference "Tag.name" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:colour ; rr:objectMap [ rml:reference "Tag.colour" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:exportable ; rr:objectMap [ rml:reference "Tag.exportable" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:hide_tag ; rr:objectMap [ rml:reference "Tag.hide_tag" ; rml:optional true ] ] ;
+    rr:predicateObjectMap [ rr:predicate ex:slug ; rr:objectMap [ rml:reference "Tag.slug" ; rml:optional true ] ] .
