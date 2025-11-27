@@ -1,0 +1,108 @@
+
+<http://example.org/api-call/api-001> a <http://example.org/maec#ApiCall> ;
+	<http://example.org/maec#returnValue> "0" ;
+	<http://example.org/maec#type> "api-call" ;
+	<http://example.org/maec#name> "NtCreateFile" ;
+	<http://example.org/maec#timestamp> "2025-11-26T20:00:00Z" ;
+	<http://example.org/maec#parameters> <http://example.org/api-call/api-001/parameters> ;
+	<http://example.org/maec#apiCallId> "api-001" .
+
+<http://example.org/api-call/api-002> a <http://example.org/maec#ApiCall> ;
+	<http://example.org/maec#returnValue> "0" ;
+	<http://example.org/maec#type> "api-call" ;
+	<http://example.org/maec#name> "RegOpenKeyEx" ;
+	<http://example.org/maec#timestamp> "2025-11-26T20:05:00Z" ;
+	<http://example.org/maec#parameters> <http://example.org/api-call/api-002/parameters> ;
+	<http://example.org/maec#apiCallId> "api-002" .
+
+<http://example.org/api-call/api-003> a <http://example.org/maec#ApiCall> ;
+	<http://example.org/maec#returnValue> "5" ;
+	<http://example.org/maec#type> "api-call" ;
+	<http://example.org/maec#name> "WriteFile" ;
+	<http://example.org/maec#timestamp> "2025-11-26T20:10:00Z" ;
+	<http://example.org/maec#parameters> <http://example.org/api-call/api-003/parameters> ;
+	<http://example.org/maec#apiCallId> "api-003" .
+
+<http://example.org/api-call/api-004> a <http://example.org/maec#ApiCall> ;
+	<http://example.org/maec#returnValue> "0" ;
+	<http://example.org/maec#type> "api-call" ;
+	<http://example.org/maec#name> "DeleteFile" ;
+	<http://example.org/maec#timestamp> "2025-11-26T20:15:00Z" ;
+	<http://example.org/maec#parameters> <http://example.org/api-call/api-004/parameters> ;
+	<http://example.org/maec#apiCallId> "api-004" .
+
+<http://example.org/api-call/api-005> a <http://example.org/maec#ApiCall> ;
+	<http://example.org/maec#returnValue> "0" ;
+	<http://example.org/maec#type> "api-call" ;
+	<http://example.org/maec#name> "OpenProcess" ;
+	<http://example.org/maec#timestamp> "2025-11-26T20:20:00Z" ;
+	<http://example.org/maec#parameters> <http://example.org/api-call/api-005/parameters> ;
+	<http://example.org/maec#apiCallId> "api-005" .
+
+<http://example.org/malware-action/ma-001> a <http://example.org/maec#MalwareAction> ;
+	<http://example.org/maec#name> "CreateFile" , "malware-action" ;
+	<http://example.org/maec#timestamp> "2025-11-26T20:00:00Z" ;
+	<http://example.org/maec#description> "The malware created a new file on the system." ;
+	<http://example.org/maec#inputObject> "file-001" , "file-002" ;
+	<http://example.org/maec#outputObject> "file-003" ;
+	<http://example.org/maec#isSuccessful> "true" ;
+	<http://example.org/maec#apiCall> <http://example.org/api-call/api-001> .
+
+<http://example.org/malware-action/ma-002> a <http://example.org/maec#MalwareAction> ;
+	<http://example.org/maec#name> "ReadRegistry" , "malware-action" ;
+	<http://example.org/maec#timestamp> "2025-11-26T20:05:00Z" ;
+	<http://example.org/maec#description> "The malware read sensitive registry keys." ;
+	<http://example.org/maec#inputObject> "reg-001" ;
+	<http://example.org/maec#outputObject> "data-001" ;
+	<http://example.org/maec#isSuccessful> "true" ;
+	<http://example.org/maec#apiCall> <http://example.org/api-call/api-002> .
+
+<http://example.org/malware-action/ma-003> a <http://example.org/maec#MalwareAction> ;
+	<http://example.org/maec#name> "WriteFile" , "malware-action" ;
+	<http://example.org/maec#timestamp> "2025-11-26T20:10:00Z" ;
+	<http://example.org/maec#description> "The malware attempted to modify a system file but failed." ;
+	<http://example.org/maec#inputObject> "file-003" ;
+	<http://example.org/maec#outputObject> "file-003" ;
+	<http://example.org/maec#isSuccessful> "false" ;
+	<http://example.org/maec#apiCall> <http://example.org/api-call/api-003> .
+
+<http://example.org/malware-action/ma-004> a <http://example.org/maec#MalwareAction> ;
+	<http://example.org/maec#name> "DeleteFile" , "malware-action" ;
+	<http://example.org/maec#timestamp> "2025-11-26T20:15:00Z" ;
+	<http://example.org/maec#description> "The malware deleted a temporary file." ;
+	<http://example.org/maec#inputObject> "file-004" ;
+	<http://example.org/maec#isSuccessful> "true" ;
+	<http://example.org/maec#apiCall> <http://example.org/api-call/api-004> .
+
+<http://example.org/malware-action/ma-005> a <http://example.org/maec#MalwareAction> ;
+	<http://example.org/maec#name> "OpenProcess" , "malware-action" ;
+	<http://example.org/maec#timestamp> "2025-11-26T20:20:00Z" ;
+	<http://example.org/maec#description> "The malware opened a handle to a critical process." ;
+	<http://example.org/maec#inputObject> "proc-001" ;
+	<http://example.org/maec#outputObject> "handle-001" ;
+	<http://example.org/maec#isSuccessful> "true" ;
+	<http://example.org/maec#apiCall> <http://example.org/api-call/api-005> .
+
+<http://example.org/api-call/api-001/parameters> a <http://example.org/maec#ApiCallParameters> ;
+	<http://example.org/maec#desiredAccess> "GENERIC_WRITE" ;
+	<http://example.org/maec#apiCallId> "api-001" ;
+	<http://example.org/maec#fileName> "C:\\Users\\Public\\malware.txt" ;
+	<http://example.org/maec#shareMode> "FILE_SHARE_READ" .
+
+<http://example.org/api-call/api-002/parameters> a <http://example.org/maec#ApiCallParameters> ;
+	<http://example.org/maec#apiCallId> "api-002" ;
+	<http://example.org/maec#keyPath> "HKEY_LOCAL_MACHINE\\Software\\SensitiveApp" .
+
+<http://example.org/api-call/api-003/parameters> a <http://example.org/maec#ApiCallParameters> ;
+	<http://example.org/maec#apiCallId> "api-003" ;
+	<http://example.org/maec#fileHandle> "handle-003" ;
+	<http://example.org/maec#buffer> "malicious content" .
+
+<http://example.org/api-call/api-004/parameters> a <http://example.org/maec#ApiCallParameters> ;
+	<http://example.org/maec#apiCallId> "api-004" ;
+	<http://example.org/maec#fileName> "C:\\Temp\\tempfile.tmp" .
+
+<http://example.org/api-call/api-005/parameters> a <http://example.org/maec#ApiCallParameters> ;
+	<http://example.org/maec#desiredAccess> "PROCESS_ALL_ACCESS" ;
+	<http://example.org/maec#processId> "1234" ;
+	<http://example.org/maec#apiCallId> "api-005" .

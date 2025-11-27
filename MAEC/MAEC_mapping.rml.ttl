@@ -1,0 +1,158 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql:  <http://semweb.mmlab.be/ns/ql#> .
+@prefix ex: <http://example.org/maec#> .
+
+<#MalwareActionTriplesMap>
+    rml:logicalSource [
+        rml:source "data-maec.json";
+        rml:referenceFormulation ql:JSONPath;
+        rml:iterator "$[*]"
+    ];
+
+    rr:subjectMap [
+        rr:template "http://example.org/malware-action/{id}";
+        rr:class ex:MalwareAction;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name;
+        rr:objectMap [ rml:reference "$.name" ];
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name;
+        rr:objectMap [ rml:reference "$.type" ];
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isSuccessful;
+        rr:objectMap [ rml:reference "$.is_successful" ];
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:description;
+        rr:objectMap [ rml:reference "$.description" ];
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:timestamp;
+        rr:objectMap [ rml:reference "$.timestamp" ];
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:inputObject;
+        rr:objectMap [ rml:reference "$.input_object_refs[*]" ];
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:outputObject;
+        rr:objectMap [ rml:reference "$.output_object_refs[*]" ];
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate ex:apiCall;
+        rr:objectMap [
+            rr:template "http://example.org/api-call/{api_call.id}"
+        ];
+    ].
+
+<#ApiCallTriplesMap>
+    rml:logicalSource [
+        rml:source "data-maec.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$[*].api_call" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://example.org/api-call/{id}" ;
+        rr:class ex:ApiCall ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:apiCallId ;
+        rr:objectMap [ rml:reference "id" ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+        rr:objectMap [ rml:reference "name" ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:type ;
+        rr:objectMap [ rml:reference "type" ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:returnValue ;
+        rr:objectMap [ rml:reference "returnValue" ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:timestamp ;
+        rr:objectMap [ rml:reference "timestamp" ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:parameters ;
+        rr:objectMap [
+            rr:parentTriplesMap <#ApiCallParametersTriplesMap> ;
+            rr:joinCondition [
+                rr:child "id" ;
+                rr:parent "api_id" ;
+            ] ;
+        ] ;
+    ] .
+
+<#ApiCallParametersTriplesMap>
+    rml:logicalSource [
+        rml:source "data-maec.json" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rml:iterator "$[*].api_call.parameters[*]" ;
+    ] ;
+
+    rr:subjectMap [
+        rr:template "http://example.org/api-call/{api_id}/parameters" ;
+        rr:class ex:ApiCallParameters ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:apiCallId ;
+        rr:objectMap [ rml:reference "api_id" ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:fileHandle ;
+        rr:objectMap [ rml:reference "fileHandle" ; rml:optional true ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:fileName ;
+        rr:objectMap [ rml:reference "fileName" ; rml:optional true ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:buffer ;
+        rr:objectMap [ rml:reference "buffer" ; rml:optional true ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:keyPath ;
+        rr:objectMap [ rml:reference "keyPath" ; rml:optional true ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:desiredAccess ;
+        rr:objectMap [ rml:reference "desiredAccess" ; rml:optional true ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:shareMode ;
+        rr:objectMap [ rml:reference "shareMode" ; rml:optional true ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:processId ;
+        rr:objectMap [ rml:reference "processId" ; rml:optional true ] ;
+    ] .
