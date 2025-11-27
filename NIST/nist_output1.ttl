@@ -1,0 +1,482 @@
+
+<http://example.org/nist-privacy/profile/privacy-baseline> a <http://example.org/nist-privacy#BaselineProfile> , <http://example.org/nist-privacy#Profile> ;
+	<http://example.org/nist-privacy#hasMetadata> <http://example.org/nist-privacy/profile/privacy-baseline/metadata> ;
+	<http://example.org/nist-privacy#baselineId> "PRIVACY_BASELINE" ;
+	<http://example.org/nist-privacy#profileUuid> "623e85c3-e8ec-40ab-b0e7-37c2b15eeca7" .
+
+<http://example.org/nist-privacy/profile/privacy-baseline/metadata> a <http://example.org/nist-privacy#Metadata> ;
+	<http://example.org/nist-privacy#oscalVersion> "1.1.3" ;
+	<http://example.org/nist-privacy#title> "Electronic (OSCAL) Version of NIST Special Publication 800-53 Revision 5.2.0 PRIVACY BASELINE" ;
+	<http://example.org/nist-privacy#version> "5.2.0" ;
+	<http://example.org/nist-privacy#lastModified> "2025-08-26T15:10:16.00000-00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+_:node1jb0epofjx1975 a <http://example.org/nist-privacy#Email> ;
+	<http://example.org/nist-privacy#emailValue> "sec-cert@nist.gov" ;
+	<http://example.org/nist-privacy#belongsToParty> <http://example.org/nist-privacy/party/41a93829-b76b-43ec-b9e7-250553511549> .
+
+<http://example.org/nist-privacy/party/41a93829-b76b-43ec-b9e7-250553511549> a <http://example.org/nist-privacy#Party> ;
+	<http://example.org/nist-privacy#partyName> "Joint Task Force, Interagency Working Group" ;
+	<http://example.org/nist-privacy#partyUuid> "41a93829-b76b-43ec-b9e7-250553511549" ;
+	<http://example.org/nist-privacy#partyType> "organization" .
+
+_:node1jb0epofjx1981 a <http://example.org/nist-privacy#Email> ;
+	<http://example.org/nist-privacy#emailValue> "oscal@nist.gov" ;
+	<http://example.org/nist-privacy#belongsToParty> <http://example.org/nist-privacy/party/98c78f9b-5d50-4b01-b47f-d16801e8d0ab> .
+
+<http://example.org/nist-privacy/party/98c78f9b-5d50-4b01-b47f-d16801e8d0ab> a <http://example.org/nist-privacy#Party> ;
+	<http://example.org/nist-privacy#partyName> "OSCAL Program" ;
+	<http://example.org/nist-privacy#partyUuid> "98c78f9b-5d50-4b01-b47f-d16801e8d0ab" ;
+	<http://example.org/nist-privacy#partyType> "organization" ;
+	<http://example.org/nist-privacy#partyShortName> "NIST" .
+
+<http://example.org/nist-privacy/role/creator> a <http://example.org/nist-privacy#Role> ;
+	<http://example.org/nist-privacy#roleId> "creator" ;
+	<http://example.org/nist-privacy#roleTitle> "OSCAL Version Creator" .
+
+<http://example.org/nist-privacy/role/contact-creator> a <http://example.org/nist-privacy#Role> ;
+	<http://example.org/nist-privacy#roleId> "contact-creator" ;
+	<http://example.org/nist-privacy#roleTitle> "Contact" .
+
+<http://example.org/nist-privacy/role/publisher> a <http://example.org/nist-privacy#Role> ;
+	<http://example.org/nist-privacy#roleId> "publisher" ;
+	<http://example.org/nist-privacy#roleTitle> "SP 800-53 Publisher" .
+
+<http://example.org/nist-privacy/role/contact-publisher> a <http://example.org/nist-privacy#Role> ;
+	<http://example.org/nist-privacy#roleId> "contact-publisher" ;
+	<http://example.org/nist-privacy#roleTitle> "Contact" .
+
+_:node1jb0epofjx2007 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ac-1" .
+
+_:node1jb0epofjx2013 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ac-3.14" .
+
+_:node1jb0epofjx2019 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "at-1" .
+
+_:node1jb0epofjx2025 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "at-2" .
+
+_:node1jb0epofjx2031 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "at-3" .
+
+_:node1jb0epofjx2037 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "at-3.5" .
+
+_:node1jb0epofjx2043 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "at-4" .
+
+_:node1jb0epofjx2049 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "au-1" .
+
+_:node1jb0epofjx2055 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "au-2" .
+
+_:node1jb0epofjx2061 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "au-3.3" .
+
+_:node1jb0epofjx2067 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "au-11" .
+
+_:node1jb0epofjx2073 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ca-1" .
+
+_:node1jb0epofjx2079 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ca-2" .
+
+_:node1jb0epofjx2085 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ca-5" .
+
+_:node1jb0epofjx2091 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ca-6" .
+
+_:node1jb0epofjx2097 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ca-7" .
+
+_:node1jb0epofjx2103 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ca-7.4" .
+
+_:node1jb0epofjx2109 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "cm-1" .
+
+_:node1jb0epofjx2115 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "cm-4" .
+
+_:node1jb0epofjx2121 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ir-1" .
+
+_:node1jb0epofjx2127 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ir-2" .
+
+_:node1jb0epofjx2133 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ir-2.3" .
+
+_:node1jb0epofjx2139 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ir-3" .
+
+_:node1jb0epofjx2145 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ir-4" .
+
+_:node1jb0epofjx2151 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ir-5" .
+
+_:node1jb0epofjx2157 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ir-6" .
+
+_:node1jb0epofjx2163 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ir-7" .
+
+_:node1jb0epofjx2169 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ir-8" .
+
+_:node1jb0epofjx2175 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ir-8.1" .
+
+_:node1jb0epofjx2181 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "mp-1" .
+
+_:node1jb0epofjx2187 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "mp-6" .
+
+_:node1jb0epofjx2193 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pe-8.3" .
+
+_:node1jb0epofjx2199 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pl-1" .
+
+_:node1jb0epofjx2205 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pl-2" .
+
+_:node1jb0epofjx2211 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pl-4" .
+
+_:node1jb0epofjx2217 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pl-4.1" .
+
+_:node1jb0epofjx2223 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pl-8" .
+
+_:node1jb0epofjx2229 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pl-9" .
+
+_:node1jb0epofjx2235 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-3" .
+
+_:node1jb0epofjx2241 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-4" .
+
+_:node1jb0epofjx2247 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-5.1" .
+
+_:node1jb0epofjx2253 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-6" .
+
+_:node1jb0epofjx2259 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-7" .
+
+_:node1jb0epofjx2265 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-8" .
+
+_:node1jb0epofjx2271 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-9" .
+
+_:node1jb0epofjx2277 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-10" .
+
+_:node1jb0epofjx2283 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-11" .
+
+_:node1jb0epofjx2289 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-13" .
+
+_:node1jb0epofjx2295 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-14" .
+
+_:node1jb0epofjx2301 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-17" .
+
+_:node1jb0epofjx2307 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-18" .
+
+_:node1jb0epofjx2313 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-19" .
+
+_:node1jb0epofjx2319 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-20" .
+
+_:node1jb0epofjx2325 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-20.1" .
+
+_:node1jb0epofjx2331 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-21" .
+
+_:node1jb0epofjx2337 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-22" .
+
+_:node1jb0epofjx2343 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-24" .
+
+_:node1jb0epofjx2349 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-25" .
+
+_:node1jb0epofjx2355 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-26" .
+
+_:node1jb0epofjx2361 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-27" .
+
+_:node1jb0epofjx2367 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-28" .
+
+_:node1jb0epofjx2373 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pm-31" .
+
+_:node1jb0epofjx2379 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ps-6" .
+
+_:node1jb0epofjx2385 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pt-1" .
+
+_:node1jb0epofjx2391 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pt-2" .
+
+_:node1jb0epofjx2397 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pt-3" .
+
+_:node1jb0epofjx2403 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pt-4" .
+
+_:node1jb0epofjx2409 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pt-5" .
+
+_:node1jb0epofjx2415 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pt-5.2" .
+
+_:node1jb0epofjx2421 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pt-6" .
+
+_:node1jb0epofjx2427 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pt-6.1" .
+
+_:node1jb0epofjx2433 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pt-6.2" .
+
+_:node1jb0epofjx2439 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pt-7" .
+
+_:node1jb0epofjx2445 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pt-7.1" .
+
+_:node1jb0epofjx2451 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pt-7.2" .
+
+_:node1jb0epofjx2457 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "pt-8" .
+
+_:node1jb0epofjx2463 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ra-1" .
+
+_:node1jb0epofjx2469 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ra-3" .
+
+_:node1jb0epofjx2475 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ra-7" .
+
+_:node1jb0epofjx2481 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "ra-8" .
+
+_:node1jb0epofjx2487 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "sa-1" .
+
+_:node1jb0epofjx2493 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "sa-2" .
+
+_:node1jb0epofjx2499 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "sa-3" .
+
+_:node1jb0epofjx2505 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "sa-4" .
+
+_:node1jb0epofjx2511 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "sa-8.33" .
+
+_:node1jb0epofjx2517 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "sa-9" .
+
+_:node1jb0epofjx2523 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "sa-11" .
+
+_:node1jb0epofjx2529 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "sc-7.24" .
+
+_:node1jb0epofjx2535 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "si-1" .
+
+_:node1jb0epofjx2541 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "si-12" .
+
+_:node1jb0epofjx2547 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "si-12.1" .
+
+_:node1jb0epofjx2553 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "si-12.2" .
+
+_:node1jb0epofjx2559 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "si-12.3" .
+
+_:node1jb0epofjx2565 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "si-18" .
+
+_:node1jb0epofjx2571 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "si-18.4" .
+
+_:node1jb0epofjx2577 a <http://example.org/nist-privacy#Control> ;
+	<http://example.org/nist-privacy#isPartOfBaseline> <http://example.org/nist-privacy/profile/privacy-baseline> ;
+	<http://example.org/nist-privacy#controlId> "si-19" .
+
+<http://example.org/nist-privacy/resource/84cbf061-eb87-4ec1-8112-1f529232e907> a <http://example.org/nist-privacy#Resource> ;
+	<http://example.org/nist-privacy#resourceUuid> "84cbf061-eb87-4ec1-8112-1f529232e907" ;
+	<http://example.org/nist-privacy#resourceDescription> "NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Federal Information Systems and Organizations" .
+
+_:node1jb0epofjx2621 a <http://example.org/nist-privacy#ResourceLink> ;
+	<http://example.org/nist-privacy#mediaType> "application/oscal.catalog+xml" ;
+	<http://example.org/nist-privacy#href> "../../../../nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml" .
+
+_:node1jb0epofjx2627 a <http://example.org/nist-privacy#ResourceLink> ;
+	<http://example.org/nist-privacy#mediaType> "application/oscal.catalog+json" ;
+	<http://example.org/nist-privacy#href> "../../../../nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json" .
+
+_:node1jb0epofjx2633 a <http://example.org/nist-privacy#ResourceLink> ;
+	<http://example.org/nist-privacy#mediaType> "application/oscal.catalog+yaml" ;
+	<http://example.org/nist-privacy#href> "../../../../nist.gov/SP800-53/rev5/yaml/NIST_SP-800-53_rev5_catalog.yaml" .
+
+<http://example.org/nist-privacy/responsible-party/publisher> a <http://example.org/nist-privacy#ResponsibleParty> ;
+	<http://example.org/nist-privacy#responsibleRole> <http://example.org/nist-privacy/role/publisher> .
+
+<http://example.org/nist-privacy/responsible-party/contact-publisher> a <http://example.org/nist-privacy#ResponsibleParty> ;
+	<http://example.org/nist-privacy#responsibleRole> <http://example.org/nist-privacy/role/contact-publisher> .
+
+<http://example.org/nist-privacy/responsible-party/creator> a <http://example.org/nist-privacy#ResponsibleParty> ;
+	<http://example.org/nist-privacy#responsibleRole> <http://example.org/nist-privacy/role/creator> .
+
+<http://example.org/nist-privacy/responsible-party/contact-creator> a <http://example.org/nist-privacy#ResponsibleParty> ;
+	<http://example.org/nist-privacy#responsibleRole> <http://example.org/nist-privacy/role/contact-creator> .
+
+_:node1jb0epofjx2651 a <http://example.org/nist-privacy#AddressLine> ;
+	<http://example.org/nist-privacy#lineValue> "National Institute of Standards and Technology" .
+
+_:node1jb0epofjx2655 a <http://example.org/nist-privacy#AddressLine> ;
+	<http://example.org/nist-privacy#lineValue> "Attn: Computer Security Division" .
+
+_:node1jb0epofjx2659 a <http://example.org/nist-privacy#AddressLine> ;
+	<http://example.org/nist-privacy#lineValue> "Information Technology Laboratory" .
+
+_:node1jb0epofjx2663 a <http://example.org/nist-privacy#AddressLine> ;
+	<http://example.org/nist-privacy#lineValue> "100 Bureau Drive (Mail Stop 8930)" .
+
+_:node1jb0epofjx2667 a <http://example.org/nist-privacy#AddressLine> ;
+	<http://example.org/nist-privacy#lineValue> "National Institute of Standards and Technology" .
+
+_:node1jb0epofjx2671 a <http://example.org/nist-privacy#AddressLine> ;
+	<http://example.org/nist-privacy#lineValue> "Attn: Computer Security Division" .
+
+_:node1jb0epofjx2675 a <http://example.org/nist-privacy#AddressLine> ;
+	<http://example.org/nist-privacy#lineValue> "Information Technology Laboratory" .
+
+_:node1jb0epofjx2679 a <http://example.org/nist-privacy#AddressLine> ;
+	<http://example.org/nist-privacy#lineValue> "100 Bureau Drive (Mail Stop 2000)" .
