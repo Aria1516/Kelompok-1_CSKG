@@ -1,0 +1,121 @@
+[
+  {
+    "type": "malware-action",
+    "id": "ma-001",
+    "name": "CreateFile",
+    "is_successful": true,
+    "description": "The malware created a new file on the system.",
+    "timestamp": "2025-11-26T20:00:00Z",
+    "input_object_refs": ["file-001", "file-002"],
+    "output_object_refs": ["file-003"],
+    "api_call": {
+      "type": "api-call",
+      "id": "api-001",
+      "name": "NtCreateFile",
+      "parameters": [ 
+        {
+          "api_id": "api-001",
+          "fileName": "C:\\Users\\Public\\malware.txt",
+          "desiredAccess": "GENERIC_WRITE",
+          "shareMode": "FILE_SHARE_READ"
+        }   
+      ],
+      "returnValue": 0,
+      "timestamp": "2025-11-26T20:00:00Z"
+    }
+  },
+  {
+    "type": "malware-action",
+    "id": "ma-002",
+    "name": "ReadRegistry",
+    "is_successful": true,
+    "description": "The malware read sensitive registry keys.",
+    "timestamp": "2025-11-26T20:05:00Z",
+    "input_object_refs": ["reg-001"],
+    "output_object_refs": ["data-001"],
+    "api_call": {
+      "type": "api-call",
+      "id": "api-002",
+      "name": "RegOpenKeyEx",
+      "parameters": [
+        {
+          "api_id": "api-002",
+          "keyPath": "HKEY_LOCAL_MACHINE\\Software\\SensitiveApp"
+        }
+      ] ,
+      "returnValue": 0,
+      "timestamp": "2025-11-26T20:05:00Z"
+    }
+  },
+  {
+    "type": "malware-action",
+    "id": "ma-003",
+    "name": "WriteFile",
+    "is_successful": false,
+    "description": "The malware attempted to modify a system file but failed.",
+    "timestamp": "2025-11-26T20:10:00Z",
+    "input_object_refs": ["file-003"],
+    "output_object_refs": ["file-003"],
+    "api_call": {
+      "type": "api-call",
+      "id": "api-003",
+      "name": "WriteFile",
+      "parameters": [
+        {
+            "api_id": "api-003",
+        "fileHandle": "handle-003",
+        "buffer": "malicious content"
+        }
+      ] ,
+      "returnValue": 5,
+      "timestamp": "2025-11-26T20:10:00Z"
+    }
+  },
+  {
+    "type": "malware-action",
+    "id": "ma-004",
+    "name": "DeleteFile",
+    "is_successful": true,
+    "description": "The malware deleted a temporary file.",
+    "timestamp": "2025-11-26T20:15:00Z",
+    "input_object_refs": ["file-004"],
+    "output_object_refs": [],
+    "api_call": {
+      "type": "api-call",
+      "id": "api-004",
+      "name": "DeleteFile",
+      "parameters": [
+        {
+          "api_id": "api-004",
+          "fileName": "C:\\Temp\\tempfile.tmp"
+        }
+      ] ,
+      "returnValue": 0,
+      "timestamp": "2025-11-26T20:15:00Z"
+    }
+  },
+  {
+    "type": "malware-action",
+    "id": "ma-005",
+    "name": "OpenProcess",
+    "is_successful": true,
+    "description": "The malware opened a handle to a critical process.",
+    "timestamp": "2025-11-26T20:20:00Z",
+    "input_object_refs": ["proc-001"],
+    "output_object_refs": ["handle-001"],
+    "api_call": {
+      "type": "api-call",
+      "id": "api-005",
+      "name": "OpenProcess",
+      "parameters": [
+        {
+          "api_id": "api-005",
+          "processId": 1234,
+          "desiredAccess": "PROCESS_ALL_ACCESS"
+        }
+      ],
+      "returnValue": 0,
+      "timestamp": "2025-11-26T20:20:00Z"
+    }
+  }
+]
