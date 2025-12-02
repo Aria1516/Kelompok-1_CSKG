@@ -1,0 +1,108 @@
+
+<http://w3id.org/sepses/vocab/ref/maec/api-call/api-001> a <http://w3id.org/sepses/vocab/ref/maec#ApiCall> ;
+	<http://w3id.org/sepses/vocab/ref/maec#parameters> <http://w3id.org/sepses/vocab/ref/maec/api-call/api-001/parameters> ;
+	<http://w3id.org/sepses/vocab/ref/maec#apiCallId> "api-001" ;
+	<http://w3id.org/sepses/vocab/ref/maec#type> "api-call" ;
+	<http://w3id.org/sepses/vocab/ref/maec#returnValue> "0" ;
+	<http://w3id.org/sepses/vocab/ref/maec#name> "NtCreateFile" ;
+	<http://w3id.org/sepses/vocab/ref/maec#timestamp> "2025-11-26T20:00:00Z" .
+
+<http://w3id.org/sepses/vocab/ref/maec/api-call/api-001/parameters> a <http://w3id.org/sepses/vocab/ref/maec#ApiCallParameters> ;
+	<http://w3id.org/sepses/vocab/ref/maec#fileName> "C:\\Users\\Public\\malware.txt" ;
+	<http://w3id.org/sepses/vocab/ref/maec#shareMode> "FILE_SHARE_READ" ;
+	<http://w3id.org/sepses/vocab/ref/maec#apiCallId> "api-001" ;
+	<http://w3id.org/sepses/vocab/ref/maec#desiredAccess> "GENERIC_WRITE" .
+
+<http://w3id.org/sepses/vocab/ref/maec/api-call/api-002> a <http://w3id.org/sepses/vocab/ref/maec#ApiCall> ;
+	<http://w3id.org/sepses/vocab/ref/maec#parameters> <http://w3id.org/sepses/vocab/ref/maec/api-call/api-002/parameters> ;
+	<http://w3id.org/sepses/vocab/ref/maec#apiCallId> "api-002" ;
+	<http://w3id.org/sepses/vocab/ref/maec#type> "api-call" ;
+	<http://w3id.org/sepses/vocab/ref/maec#returnValue> "0" ;
+	<http://w3id.org/sepses/vocab/ref/maec#name> "RegOpenKeyEx" ;
+	<http://w3id.org/sepses/vocab/ref/maec#timestamp> "2025-11-26T20:05:00Z" .
+
+<http://w3id.org/sepses/vocab/ref/maec/api-call/api-002/parameters> a <http://w3id.org/sepses/vocab/ref/maec#ApiCallParameters> ;
+	<http://w3id.org/sepses/vocab/ref/maec#apiCallId> "api-002" ;
+	<http://w3id.org/sepses/vocab/ref/maec#keyPath> "HKEY_LOCAL_MACHINE\\Software\\SensitiveApp" .
+
+<http://w3id.org/sepses/vocab/ref/maec/api-call/api-003> a <http://w3id.org/sepses/vocab/ref/maec#ApiCall> ;
+	<http://w3id.org/sepses/vocab/ref/maec#parameters> <http://w3id.org/sepses/vocab/ref/maec/api-call/api-003/parameters> ;
+	<http://w3id.org/sepses/vocab/ref/maec#apiCallId> "api-003" ;
+	<http://w3id.org/sepses/vocab/ref/maec#type> "api-call" ;
+	<http://w3id.org/sepses/vocab/ref/maec#returnValue> "5" ;
+	<http://w3id.org/sepses/vocab/ref/maec#name> "WriteFile" ;
+	<http://w3id.org/sepses/vocab/ref/maec#timestamp> "2025-11-26T20:10:00Z" .
+
+<http://w3id.org/sepses/vocab/ref/maec/api-call/api-003/parameters> a <http://w3id.org/sepses/vocab/ref/maec#ApiCallParameters> ;
+	<http://w3id.org/sepses/vocab/ref/maec#apiCallId> "api-003" ;
+	<http://w3id.org/sepses/vocab/ref/maec#buffer> "malicious content" ;
+	<http://w3id.org/sepses/vocab/ref/maec#fileHandle> "handle-003" .
+
+<http://w3id.org/sepses/vocab/ref/maec/api-call/api-004> a <http://w3id.org/sepses/vocab/ref/maec#ApiCall> ;
+	<http://w3id.org/sepses/vocab/ref/maec#parameters> <http://w3id.org/sepses/vocab/ref/maec/api-call/api-004/parameters> ;
+	<http://w3id.org/sepses/vocab/ref/maec#apiCallId> "api-004" ;
+	<http://w3id.org/sepses/vocab/ref/maec#type> "api-call" ;
+	<http://w3id.org/sepses/vocab/ref/maec#returnValue> "0" ;
+	<http://w3id.org/sepses/vocab/ref/maec#name> "DeleteFile" ;
+	<http://w3id.org/sepses/vocab/ref/maec#timestamp> "2025-11-26T20:15:00Z" .
+
+<http://w3id.org/sepses/vocab/ref/maec/api-call/api-004/parameters> a <http://w3id.org/sepses/vocab/ref/maec#ApiCallParameters> ;
+	<http://w3id.org/sepses/vocab/ref/maec#fileName> "C:\\Temp\\tempfile.tmp" ;
+	<http://w3id.org/sepses/vocab/ref/maec#apiCallId> "api-004" .
+
+<http://w3id.org/sepses/vocab/ref/maec/api-call/api-005> a <http://w3id.org/sepses/vocab/ref/maec#ApiCall> ;
+	<http://w3id.org/sepses/vocab/ref/maec#parameters> <http://w3id.org/sepses/vocab/ref/maec/api-call/api-005/parameters> ;
+	<http://w3id.org/sepses/vocab/ref/maec#apiCallId> "api-005" ;
+	<http://w3id.org/sepses/vocab/ref/maec#type> "api-call" ;
+	<http://w3id.org/sepses/vocab/ref/maec#returnValue> "0" ;
+	<http://w3id.org/sepses/vocab/ref/maec#name> "OpenProcess" ;
+	<http://w3id.org/sepses/vocab/ref/maec#timestamp> "2025-11-26T20:20:00Z" .
+
+<http://w3id.org/sepses/vocab/ref/maec/api-call/api-005/parameters> a <http://w3id.org/sepses/vocab/ref/maec#ApiCallParameters> ;
+	<http://w3id.org/sepses/vocab/ref/maec#apiCallId> "api-005" ;
+	<http://w3id.org/sepses/vocab/ref/maec#desiredAccess> "PROCESS_ALL_ACCESS" ;
+	<http://w3id.org/sepses/vocab/ref/maec#processId> "1234" .
+
+<http://w3id.org/sepses/vocab/ref/maec/malware-action/ma-001> a <http://w3id.org/sepses/vocab/ref/maec#MalwareAction> ;
+	<http://w3id.org/sepses/vocab/ref/maec#name> "malware-action" , "CreateFile" ;
+	<http://w3id.org/sepses/vocab/ref/maec#timestamp> "2025-11-26T20:00:00Z" ;
+	<http://w3id.org/sepses/vocab/ref/maec#outputObject> "file-003" ;
+	<http://w3id.org/sepses/vocab/ref/maec#isSuccessful> "true" ;
+	<http://w3id.org/sepses/vocab/ref/maec#apiCall> <http://w3id.org/sepses/vocab/ref/maec/api-call/api-001> ;
+	<http://w3id.org/sepses/vocab/ref/maec#inputObject> "file-001" , "file-002" ;
+	<http://w3id.org/sepses/vocab/ref/maec#description> "The malware created a new file on the system." .
+
+<http://w3id.org/sepses/vocab/ref/maec/malware-action/ma-002> a <http://w3id.org/sepses/vocab/ref/maec#MalwareAction> ;
+	<http://w3id.org/sepses/vocab/ref/maec#name> "malware-action" , "ReadRegistry" ;
+	<http://w3id.org/sepses/vocab/ref/maec#timestamp> "2025-11-26T20:05:00Z" ;
+	<http://w3id.org/sepses/vocab/ref/maec#outputObject> "data-001" ;
+	<http://w3id.org/sepses/vocab/ref/maec#isSuccessful> "true" ;
+	<http://w3id.org/sepses/vocab/ref/maec#apiCall> <http://w3id.org/sepses/vocab/ref/maec/api-call/api-002> ;
+	<http://w3id.org/sepses/vocab/ref/maec#inputObject> "reg-001" ;
+	<http://w3id.org/sepses/vocab/ref/maec#description> "The malware read sensitive registry keys." .
+
+<http://w3id.org/sepses/vocab/ref/maec/malware-action/ma-003> a <http://w3id.org/sepses/vocab/ref/maec#MalwareAction> ;
+	<http://w3id.org/sepses/vocab/ref/maec#name> "malware-action" , "WriteFile" ;
+	<http://w3id.org/sepses/vocab/ref/maec#timestamp> "2025-11-26T20:10:00Z" ;
+	<http://w3id.org/sepses/vocab/ref/maec#outputObject> "file-003" ;
+	<http://w3id.org/sepses/vocab/ref/maec#isSuccessful> "false" ;
+	<http://w3id.org/sepses/vocab/ref/maec#apiCall> <http://w3id.org/sepses/vocab/ref/maec/api-call/api-003> ;
+	<http://w3id.org/sepses/vocab/ref/maec#inputObject> "file-003" ;
+	<http://w3id.org/sepses/vocab/ref/maec#description> "The malware attempted to modify a system file but failed." .
+
+<http://w3id.org/sepses/vocab/ref/maec/malware-action/ma-004> a <http://w3id.org/sepses/vocab/ref/maec#MalwareAction> ;
+	<http://w3id.org/sepses/vocab/ref/maec#name> "malware-action" , "DeleteFile" ;
+	<http://w3id.org/sepses/vocab/ref/maec#timestamp> "2025-11-26T20:15:00Z" ;
+	<http://w3id.org/sepses/vocab/ref/maec#isSuccessful> "true" ;
+	<http://w3id.org/sepses/vocab/ref/maec#apiCall> <http://w3id.org/sepses/vocab/ref/maec/api-call/api-004> ;
+	<http://w3id.org/sepses/vocab/ref/maec#inputObject> "file-004" ;
+	<http://w3id.org/sepses/vocab/ref/maec#description> "The malware deleted a temporary file." .
+
+<http://w3id.org/sepses/vocab/ref/maec/malware-action/ma-005> a <http://w3id.org/sepses/vocab/ref/maec#MalwareAction> ;
+	<http://w3id.org/sepses/vocab/ref/maec#name> "malware-action" , "OpenProcess" ;
+	<http://w3id.org/sepses/vocab/ref/maec#timestamp> "2025-11-26T20:20:00Z" ;
+	<http://w3id.org/sepses/vocab/ref/maec#outputObject> "handle-001" ;
+	<http://w3id.org/sepses/vocab/ref/maec#isSuccessful> "true" ;
+	<http://w3id.org/sepses/vocab/ref/maec#apiCall> <http://w3id.org/sepses/vocab/ref/maec/api-call/api-005> ;
+	<http://w3id.org/sepses/vocab/ref/maec#inputObject> "proc-001" ;
+	<http://w3id.org/sepses/vocab/ref/maec#description> "The malware opened a handle to a critical process." .

@@ -1,0 +1,482 @@
+
+<http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline/metadata> a <http://w3id.org/sepses/vocab/ref/nist-privacy#Metadata> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#version> "5.2.0" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#title> "Electronic (OSCAL) Version of NIST Special Publication 800-53 Revision 5.2.0 PRIVACY BASELINE" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#oscalVersion> "1.1.3" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#lastModified> "2025-08-26T15:10:16.00000-00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://w3id.org/sepses/vocab/ref/nist-privacy/role/creator> a <http://w3id.org/sepses/vocab/ref/nist-privacy#Role> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#roleTitle> "OSCAL Version Creator" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#roleId> "creator" .
+
+<http://w3id.org/sepses/vocab/ref/nist-privacy/role/contact-creator> a <http://w3id.org/sepses/vocab/ref/nist-privacy#Role> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#roleTitle> "Contact" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#roleId> "contact-creator" .
+
+<http://w3id.org/sepses/vocab/ref/nist-privacy/role/publisher> a <http://w3id.org/sepses/vocab/ref/nist-privacy#Role> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#roleTitle> "SP 800-53 Publisher" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#roleId> "publisher" .
+
+<http://w3id.org/sepses/vocab/ref/nist-privacy/role/contact-publisher> a <http://w3id.org/sepses/vocab/ref/nist-privacy#Role> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#roleTitle> "Contact" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#roleId> "contact-publisher" .
+
+_:node1jb1rjh8jx2004 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Email> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#emailValue> "sec-cert@nist.gov" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#belongsToParty> <http://w3id.org/sepses/vocab/ref/nist-privacy/party/41a93829-b76b-43ec-b9e7-250553511549> .
+
+<http://w3id.org/sepses/vocab/ref/nist-privacy/party/41a93829-b76b-43ec-b9e7-250553511549> a <http://w3id.org/sepses/vocab/ref/nist-privacy#Party> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#partyUuid> "41a93829-b76b-43ec-b9e7-250553511549" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#partyName> "Joint Task Force, Interagency Working Group" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#partyType> "organization" .
+
+_:node1jb1rjh8jx2010 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Email> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#emailValue> "oscal@nist.gov" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#belongsToParty> <http://w3id.org/sepses/vocab/ref/nist-privacy/party/98c78f9b-5d50-4b01-b47f-d16801e8d0ab> .
+
+<http://w3id.org/sepses/vocab/ref/nist-privacy/party/98c78f9b-5d50-4b01-b47f-d16801e8d0ab> a <http://w3id.org/sepses/vocab/ref/nist-privacy#Party> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#partyUuid> "98c78f9b-5d50-4b01-b47f-d16801e8d0ab" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#partyName> "OSCAL Program" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#partyType> "organization" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#partyShortName> "NIST" .
+
+<http://w3id.org/sepses/vocab/ref/nist-privacy/resource/84cbf061-eb87-4ec1-8112-1f529232e907> a <http://w3id.org/sepses/vocab/ref/nist-privacy#Resource> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#resourceUuid> "84cbf061-eb87-4ec1-8112-1f529232e907" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#resourceDescription> "NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Federal Information Systems and Organizations" .
+
+<http://w3id.org/sepses/vocab/ref/nist-privacy/responsible-party/publisher> a <http://w3id.org/sepses/vocab/ref/nist-privacy#ResponsibleParty> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#responsibleRole> <http://w3id.org/sepses/vocab/ref/nist-privacy/role/publisher> .
+
+<http://w3id.org/sepses/vocab/ref/nist-privacy/responsible-party/contact-publisher> a <http://w3id.org/sepses/vocab/ref/nist-privacy#ResponsibleParty> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#responsibleRole> <http://w3id.org/sepses/vocab/ref/nist-privacy/role/contact-publisher> .
+
+<http://w3id.org/sepses/vocab/ref/nist-privacy/responsible-party/creator> a <http://w3id.org/sepses/vocab/ref/nist-privacy#ResponsibleParty> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#responsibleRole> <http://w3id.org/sepses/vocab/ref/nist-privacy/role/creator> .
+
+<http://w3id.org/sepses/vocab/ref/nist-privacy/responsible-party/contact-creator> a <http://w3id.org/sepses/vocab/ref/nist-privacy#ResponsibleParty> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#responsibleRole> <http://w3id.org/sepses/vocab/ref/nist-privacy/role/contact-creator> .
+
+_:node1jb1rjh8jx2049 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ac-1" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+<http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> a <http://w3id.org/sepses/vocab/ref/nist-privacy#BaselineProfile> , <http://w3id.org/sepses/vocab/ref/nist-privacy#Profile> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#hasMetadata> <http://w3id.org/sepses/kvocab/refg/nist-privacy/profile/privacy-baseline/metadata> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#profileUuid> "623e85c3-e8ec-40ab-b0e7-37c2b15eeca7" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#baselineId> "PRIVACY_BASELINE" .
+
+_:node1jb1rjh8jx2055 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ac-3.14" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2061 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "at-1" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2067 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "at-2" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2073 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "at-3" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2079 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "at-3.5" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2085 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "at-4" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2091 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "au-1" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2097 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "au-2" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2103 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "au-3.3" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2109 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "au-11" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2115 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ca-1" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2121 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ca-2" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2127 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ca-5" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2133 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ca-6" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2139 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ca-7" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2145 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ca-7.4" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2151 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "cm-1" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2157 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "cm-4" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2163 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ir-1" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2169 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ir-2" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2175 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ir-2.3" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2181 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ir-3" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2187 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ir-4" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2193 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ir-5" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2199 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ir-6" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2205 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ir-7" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2211 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ir-8" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2217 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ir-8.1" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2223 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "mp-1" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2229 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "mp-6" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2235 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pe-8.3" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2241 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pl-1" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2247 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pl-2" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2253 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pl-4" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2259 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pl-4.1" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2265 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pl-8" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2271 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pl-9" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2277 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-3" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2283 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-4" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2289 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-5.1" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2295 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-6" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2301 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-7" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2307 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-8" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2313 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-9" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2319 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-10" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2325 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-11" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2331 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-13" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2337 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-14" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2343 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-17" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2349 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-18" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2355 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-19" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2361 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-20" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2367 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-20.1" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2373 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-21" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2379 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-22" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2385 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-24" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2391 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-25" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2397 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-26" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2403 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-27" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2409 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-28" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2415 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pm-31" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2421 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ps-6" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2427 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pt-1" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2433 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pt-2" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2439 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pt-3" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2445 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pt-4" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2451 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pt-5" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2457 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pt-5.2" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2463 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pt-6" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2469 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pt-6.1" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2475 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pt-6.2" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2481 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pt-7" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2487 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pt-7.1" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2493 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pt-7.2" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2499 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "pt-8" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2505 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ra-1" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2511 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ra-3" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2517 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ra-7" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2523 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "ra-8" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2529 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "sa-1" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2535 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "sa-2" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2541 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "sa-3" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2547 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "sa-4" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2553 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "sa-8.33" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2559 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "sa-9" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2565 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "sa-11" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2571 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "sc-7.24" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2577 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "si-1" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2583 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "si-12" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2589 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "si-12.1" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2595 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "si-12.2" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2601 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "si-12.3" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2607 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "si-18" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2613 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "si-18.4" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2619 a <http://w3id.org/sepses/vocab/ref/nist-privacy#Control> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#controlId> "si-19" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#isPartOfBaseline> <http://w3id.org/sepses/vocab/ref/nist-privacy/profile/privacy-baseline> .
+
+_:node1jb1rjh8jx2625 a <http://w3id.org/sepses/vocab/ref/nist-privacy#AddressLine> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#lineValue> "National Institute of Standards and Technology" .
+
+_:node1jb1rjh8jx2629 a <http://w3id.org/sepses/vocab/ref/nist-privacy#AddressLine> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#lineValue> "Attn: Computer Security Division" .
+
+_:node1jb1rjh8jx2633 a <http://w3id.org/sepses/vocab/ref/nist-privacy#AddressLine> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#lineValue> "Information Technology Laboratory" .
+
+_:node1jb1rjh8jx2637 a <http://w3id.org/sepses/vocab/ref/nist-privacy#AddressLine> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#lineValue> "100 Bureau Drive (Mail Stop 8930)" .
+
+_:node1jb1rjh8jx2641 a <http://w3id.org/sepses/vocab/ref/nist-privacy#AddressLine> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#lineValue> "National Institute of Standards and Technology" .
+
+_:node1jb1rjh8jx2645 a <http://w3id.org/sepses/vocab/ref/nist-privacy#AddressLine> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#lineValue> "Attn: Computer Security Division" .
+
+_:node1jb1rjh8jx2649 a <http://w3id.org/sepses/vocab/ref/nist-privacy#AddressLine> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#lineValue> "Information Technology Laboratory" .
+
+_:node1jb1rjh8jx2653 a <http://w3id.org/sepses/vocab/ref/nist-privacy#AddressLine> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#lineValue> "100 Bureau Drive (Mail Stop 2000)" .
+
+_:node1jb1rjh8jx2665 a <http://w3id.org/sepses/vocab/ref/nist-privacy#ResourceLink> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#mediaType> "application/oscal.catalog+xml" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#href> "../../../../nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml" .
+
+_:node1jb1rjh8jx2671 a <http://w3id.org/sepses/vocab/ref/nist-privacy#ResourceLink> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#mediaType> "application/oscal.catalog+json" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#href> "../../../../nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json" .
+
+_:node1jb1rjh8jx2677 a <http://w3id.org/sepses/vocab/ref/nist-privacy#ResourceLink> ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#mediaType> "application/oscal.catalog+yaml" ;
+	<http://w3id.org/sepses/vocab/ref/nist-privacy#href> "../../../../nist.gov/SP800-53/rev5/yaml/NIST_SP-800-53_rev5_catalog.yaml" .
