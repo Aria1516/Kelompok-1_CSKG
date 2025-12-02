@@ -1,0 +1,62 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix maec: <http://w3id.org/sepses/vocab/ref/maec/> .
+@prefix nist: <http://w3id.org/sepses/vocab/ref/nist-privacy/> .
+@prefix misp: <http://w3id.org/sepses/vocab/ref/misp/> .
+@prefix sec: <https://w3id.org/sepses/vocab/security#> .
+
+############################################################
+# 1) NIST Controls — must have controlId
+############################################################
+
+nist:ControlShape
+    a sh:NodeShape ;
+    sh:targetClass nist:Control ;
+    sh:property [
+        sh:path nist:controlId ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "NIST Control must have a controlId." ;
+    ] .
+
+############################################################
+# 2) MAEC ApiCall — must have apiCallId
+############################################################
+
+maec:ApiCallShape
+    a sh:NodeShape ;
+    sh:targetClass maec:ApiCall ;
+    sh:property [
+        sh:path maec:apiCallId ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "MAEC ApiCall must have apiCallId." ;
+    ] .
+
+############################################################
+# 3) Linking check — OPTIONAL (warning only)
+############################################################
+
+sec:MitigationCheck
+    a sh:NodeShape ;
+    sh:targetClass maec:ApiCall ;
+    sh:severity sh:Warning ;
+    sh:property [
+        sh:path sec:isMitigatedBy ;
+        sh:minCount 1 ;
+        sh:message "ApiCall is not linked to any NIST control (expected linking)." ;
+    ] .
+
+############################################################
+# 4) MISP feed basic check
+############################################################
+
+misp:FeedShape
+    a sh:NodeShape ;
+    sh:targetClass misp:Feed ;
+    sh:property [
+        sh:path misp:feedUrl ;
+        sh:minCount 1 ;
+        sh:datatype xsd:anyURI ;
+        sh:message "MISP feed must have a URL." ;
+    ] .
