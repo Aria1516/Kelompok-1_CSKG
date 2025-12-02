@@ -1,0 +1,142 @@
+@prefix ex: <http://example.org/maec#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex: a owl:Ontology ;
+    rdfs:label "Malware Action and API Call Ontology" ;
+    rdfs:comment "Ontology describing malware actions, API calls, and their parameters." .
+
+##############################
+#          CLASSES
+##############################
+
+ex:MalwareAction a owl:Class ;
+    rdfs:label "Malware Action" ;
+    rdfs:comment "A single atomic action performed by malware." .
+
+ex:ApiCall a owl:Class ;
+    rdfs:label "API Call" ;
+    rdfs:comment "A specific OS-level or application-level API call invoked by malware." .
+
+ex:ApiCallParameters a owl:Class ;
+    rdfs:label "API Call Parameters" ;
+    rdfs:comment "The parameters supplied to an API call." .
+
+##############################
+#       OBJECT PROPERTIES
+##############################
+
+ex:apiCall a owl:ObjectProperty ;
+    rdfs:label "uses API call" ;
+    rdfs:domain ex:MalwareAction ;
+    rdfs:range ex:ApiCall ;
+    rdfs:comment "Connects a malware action to the API call it triggered." .
+
+ex:parameters a owl:ObjectProperty ;
+    rdfs:label "has parameters" ;
+    rdfs:domain ex:ApiCall ;
+    rdfs:range ex:ApiCallParameters ;
+    rdfs:comment "Connects an API call to the parameters used." .
+
+##############################
+#     DATATYPE PROPERTIES
+##############################
+
+# Shared name property
+ex:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:range xsd:string ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf ( ex:MalwareAction ex:ApiCall )
+    ] .
+
+# Description
+ex:description a owl:DatatypeProperty ;
+    rdfs:label "description" ;
+    rdfs:domain ex:MalwareAction ;
+    rdfs:range xsd:string .
+
+# Success flag
+ex:isSuccessful a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:label "is successful" ;
+    rdfs:domain ex:MalwareAction ;
+    rdfs:range xsd:boolean .
+
+# Timestamp (unified)
+ex:timestamp a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:label "timestamp" ;
+    rdfs:range xsd:dateTime ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf ( ex:MalwareAction ex:ApiCall )
+    ] .
+
+# Input/output object references
+ex:inputObject a owl:DatatypeProperty ;
+    rdfs:label "input object" ;
+    rdfs:domain ex:MalwareAction ;
+    rdfs:range xsd:string .
+
+ex:outputObject a owl:DatatypeProperty ;
+    rdfs:label "output object" ;
+    rdfs:domain ex:MalwareAction ;
+    rdfs:range xsd:string .
+
+##################################
+#     API CALL DATATYPE PROPS
+##################################
+
+ex:apiCallId a owl:DatatypeProperty ;
+    rdfs:label "API call ID" ;
+    rdfs:range xsd:string ;
+    rdfs:domain [
+        a owl:Class ;
+        owl:unionOf ( ex:ApiCall ex:ApiCallParameters )
+    ] .
+
+ex:returnValue a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:label "return value" ;
+    rdfs:domain ex:ApiCall ;
+    rdfs:range xsd:int .
+
+##################################
+#   PARAMETER-SPECIFIC PROPERTIES
+##################################
+
+ex:fileName a owl:DatatypeProperty ;
+    rdfs:label "file name" ;
+    rdfs:domain ex:ApiCallParameters ;
+    rdfs:range xsd:string .
+
+ex:desiredAccess a owl:DatatypeProperty ;
+    rdfs:label "desired access" ;
+    rdfs:domain ex:ApiCallParameters ;
+    rdfs:range xsd:string .
+
+ex:shareMode a owl:DatatypeProperty ;
+    rdfs:label "share mode" ;
+    rdfs:domain ex:ApiCallParameters ;
+    rdfs:range xsd:string .
+
+ex:keyPath a owl:DatatypeProperty ;
+    rdfs:label "registry key path" ;
+    rdfs:domain ex:ApiCallParameters ;
+    rdfs:range xsd:string .
+
+ex:fileHandle a owl:DatatypeProperty ;
+    rdfs:label "file handle" ;
+    rdfs:domain ex:ApiCallParameters ;
+    rdfs:range xsd:string .
+
+ex:buffer a owl:DatatypeProperty ;
+    rdfs:label "buffer content" ;
+    rdfs:domain ex:ApiCallParameters ;
+    rdfs:range xsd:string .
+
+ex:processId a owl:DatatypeProperty ;
+    rdfs:label "process ID" ;
+    rdfs:domain ex:ApiCallParameters ;
+    rdfs:range xsd:int .
