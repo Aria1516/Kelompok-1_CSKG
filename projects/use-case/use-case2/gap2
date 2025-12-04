@@ -1,0 +1,8 @@
+PREFIX misp: <http://w3id.org/sepses/vocab/ref/misp#>
+
+SELECT ?attr
+WHERE {
+    ?attr a misp:Attribute .
+    FILTER NOT EXISTS { ?attr misp:linkedMAEC ?m }
+    FILTER NOT EXISTS { ?attr misp:linkedAttack ?t }
+}
