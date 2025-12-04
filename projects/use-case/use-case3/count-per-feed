@@ -1,0 +1,8 @@
+PREFIX misp: <http://w3id.org/sepses/vocab/ref/misp#>
+
+SELECT ?feed (COUNT(?event) AS ?numEvents)
+WHERE {
+    ?feed a misp:MISPFeed .
+    ?feed misp:producesEvent ?event .
+}
+GROUP BY ?feed
