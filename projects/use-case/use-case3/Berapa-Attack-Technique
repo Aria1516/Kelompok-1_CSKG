@@ -1,0 +1,10 @@
+PREFIX attack: <http://w3id.org/sepses/vocab/ref/attack#>
+PREFIX nistp: <http://w3id.org/sepses/vocab/ref/nist-privacy#>
+
+SELECT ?control (COUNT(?technique) AS ?numTechniques)
+WHERE {
+    ?technique attack:hasPrivacyImpact ?control .
+}
+GROUP BY ?control
+ORDER BY DESC(?numTechniques)
+
