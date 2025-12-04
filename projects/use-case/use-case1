@@ -1,0 +1,17 @@
+PREFIX misp: <http://w3id.org/sepses/vocab/ref/misp#>
+PREFIX mispf: <http://w3id.org/sepses/vocab/ref/misp/feed/>
+PREFIX maec: <http://w3id.org/sepses/vocab/ref/maec#>
+PREFIX attack: <http://w3id.org/sepses/vocab/ref/attack#>
+PREFIX nistp: <http://w3id.org/sepses/vocab/ref/nist-privacy#>
+
+SELECT DISTINCT ?feed ?event ?attribute ?maec ?technique ?control
+WHERE {
+    ?feed a misp:MISPFeed .
+    ?feed misp:producesEvent ?event .
+    ?event misp:hasIndicator ?attribute .
+
+    OPTIONAL { ?attribute misp:linkedMAEC ?maec . }
+    OPTIONAL { ?attribute misp:linkedAttack ?technique . }
+    OPTIONAL { ?maec maec:impactsPrivacyControl ?control . }
+}
+LIMIT 200
