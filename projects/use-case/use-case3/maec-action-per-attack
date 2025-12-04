@@ -1,0 +1,9 @@
+PREFIX maec: <http://w3id.org/sepses/vocab/ref/maec#>
+PREFIX attack: <http://w3id.org/sepses/vocab/ref/attack#>
+
+SELECT ?technique (COUNT(?maec) AS ?numActions)
+WHERE {
+    ?maec maec:mapsToAttack ?technique .
+}
+GROUP BY ?technique
+ORDER BY DESC(?numActions)
