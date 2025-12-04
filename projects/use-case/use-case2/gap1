@@ -1,0 +1,7 @@
+PREFIX misp: <http://w3id.org/sepses/vocab/ref/misp#>
+
+SELECT ?event
+WHERE {
+    ?event a misp:Event .
+    FILTER NOT EXISTS { ?event misp:hasIndicator ?attr }
+}
