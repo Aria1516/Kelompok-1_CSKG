@@ -1,0 +1,7 @@
+PREFIX maec: <http://w3id.org/sepses/vocab/ref/maec#>
+
+SELECT ?maec
+WHERE {
+    ?maec a maec:MalwareAction .
+    FILTER NOT EXISTS { ?maec maec:mapsToAttack ?t }
+}
